@@ -1,0 +1,10 @@
+@import "../../../config-scss/rem-calc.scss";
+
+$padding: rem-calc(20);
+
+:host {
+  width: 100%;
+
+  @media (max-width: 400px) {
+  }
+}

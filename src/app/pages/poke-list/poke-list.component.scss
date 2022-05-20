@@ -1,0 +1,59 @@
+@import '../../../config-scss/rem-calc.scss';
+
+$padding: rem-calc(20);
+
+:host {
+	width: 100%;
+
+	.listagem {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		padding: $padding 0;
+
+		.pokemon {
+			position: relative;
+			display: flex;
+			background: var(--branco);
+
+			width: calc(52% - 2.5rem);
+			height: rem-calc(157 - 40);
+
+			margin-bottom: rem-calc(10);
+			padding: $padding;
+
+			border-radius: rem-calc(10);
+
+			text-decoration: none;
+			color: var(--primary-color);
+
+			&__image {
+				position: relative;
+
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				height: rem-calc(90);
+				width: rem-calc(110);
+
+				right: -68%;
+				bottom: 15px;
+
+				background: url('../../../assets/bg/pngwing.com (13).png') no-repeat;
+
+				img {
+					width: rem-calc(95);
+
+				}
+			}
+		}
+
+		@media (max-width: 400px) {
+			a {
+				width: 100% !important;
+			}
+		}
+	}
+}
